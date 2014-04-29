@@ -1,0 +1,55 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+
+rojoCorazon = #d12845
+verdeSalud = #00be63
+cafeOscuro = #5a463d
+amarilloClaro = #fbf8e0
+
+body
+	background amarilloClaro
+	color cafeOscuro
+	font-family latoregular
+	font-size 16px
+
+figure
+img
+ul
+	margin 0
+	padding 0
+
+h1
+	font-family klinic_slabbold
+
+header
+	background-image url("../img/bg/bg1.jpg")
+	background-size cover
+	color white
+	height 600px
+	position relative
+	&:before
+		content ''
+		background rgba(verdeSalud, .90)
+		height 600px
+		left 0
+		position absolute
+		right 0
+		top 0
+	&:after
+		content ''
+		background-image url("../img/bg/marquee2x.png")
+		background-size cover
+		width 100%
+		height 10px
+		position absolute
+		top 100%
+	figure
+		position relative
+		text-align center
+		img
+			display block
+			margin 0 auto
+			padding-top 2.5em
+		p
+			margin 0
