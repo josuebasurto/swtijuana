@@ -5,13 +5,14 @@
 rojoCorazon = #d12845
 verdeSalud = #00be63
 cafeOscuro = #5a463d
+cafeFooter = #22201f
 amarilloClaro = #fbf8e0
 
 body
 	background amarilloClaro
 	color cafeOscuro
 	font-family latoregular
-	font-size 16px
+	font-size 18px
 
 figure
 img
@@ -19,8 +20,73 @@ ul
 	margin 0
 	padding 0
 
+footer
+	background cafeFooter
+	position relative
+	text-align center
+	width 100%
+	&:before
+		background-image url("../img/bg/grass.png")
+		content ''
+		height 40px
+		left 0
+		position absolute
+		top -40px
+		width 100%
+	#swtj
+		display inline-block
+		padding-right 2.5em
+		margin-bottom 3em
+		img
+			display block
+			margin 2em 0 0 0
+		p
+			color amarilloClaro
+			font-size 1.3em
+			display inline-block
+		.circle
+			background amarilloClaro
+			border-radius 50%
+			color cafeFooter
+			display inline-block
+			font-size 1.2em
+			margin-right 1.4em
+			padding .35em
+			text-decoration none
+	.patrocinio
+		display inline-block
+		margin-left 4em
+		margin-right 3em
+		position relative
+		&:before
+				content '{'
+				color rgba(amarilloClaro, .10)
+				font-size 14em
+				left -65px
+				position absolute
+				top 0
+			&:after
+				content '}'
+				color rgba(amarilloClaro, .10)
+				font-size 14em
+				position absolute
+				right -65px
+				top 0
+		h2
+			color amarilloClaro
+
 h1
 	font-family klinic_slabbold
+	color rojoCorazon
+
+h2
+	font-family klinic_slabbold
+	font-size 1.7em
+	text-transform uppercase
+
+h3
+	font-family klinic_slabbold
+	font-size 1.4em
 
 header
 	background-image url("../img/bg/bg1.jpg")
@@ -28,6 +94,7 @@ header
 	color white
 	height 600px
 	position relative
+	text-align center
 	&:before
 		content ''
 		background rgba(verdeSalud, .90)
@@ -36,20 +103,191 @@ header
 		position absolute
 		right 0
 		top 0
-	&:after
-		content ''
+	.bar
 		background-image url("../img/bg/marquee2x.png")
 		background-size cover
 		width 100%
 		height 10px
 		position absolute
 		top 100%
+		left 0
 	figure
 		position relative
 		text-align center
 		img
 			display block
 			margin 0 auto
-			padding-top 2.5em
+			&:first-child
+				padding-top 2.5em
+			&:last-child
+				padding-top 1em
 		p
 			margin 0
+	.btnTickets
+		background rgba(white, .85)
+		border 2px solid white
+		border-radius 4px
+		color cafeOscuro
+		display inline-block
+		font-family klinic_slabbold
+		font-size 1.5em
+		margin 1.5em auto 0
+		padding .6em 1.2em
+		position relative
+		text-decoration none
+
+#description
+	background white
+	border-bottom 1px solid #CCC
+	height 500px
+	text-align center
+	.twits
+		display inline-block
+		max-width 340px
+		overflow hidden
+		padding 4em
+		text-align left
+		.user
+			padding-top .6em
+			.picTwit
+				border 2px solid verdeSalud
+				border-radius 50%
+				float left
+				height 55px
+				width 55px
+			p
+				display inline-block
+				margin .6em 0 0 1em
+	.video
+		display inline-block
+		margin-top 4.8em
+
+#details
+	text-align center
+	#skills
+	#ideas
+		margin-top 4em
+		ul
+			margin-top 3em
+			li
+				display inline-block
+				margin 0 1.5em
+				max-width 230px
+				&:first-child
+					margin-left 0
+				&:last-child
+					margin-right 0
+				.circle
+					background rgba(white, .75)
+					border 1px dashed cafeOscuro
+					border-radius 50%
+					display inline-block
+					font-size 6em
+					padding .35em
+
+	#program
+		margin-top 4em
+		section
+			background white
+			border 1px solid #CCC
+			margin 3em auto 0
+			max-width 1000px
+			article
+				padding-right 1.5em
+				text-align left
+				&:last-child
+					margin-bottom 3em
+				.friday
+					background-image url("../img/bg/friday.png")
+				.saturday
+					background-image url("../img/bg/saturday.png")
+				.sunday
+					background-image url("../img/bg/sunday.png")
+				.ribbon
+					background-position center
+					background-repeat no-repeat
+					background-size contain
+					height 56px
+					margin 1.2em 0 0 -29px
+					padding-top .7em
+					width 485px
+					h3
+						color white
+						margin 0 0 0 1.2em
+				figure
+					color rgba(cafeOscuro, .25)
+					float left
+					font-size 7em
+					padding .18em .2em
+	
+	#ideas
+		margin-bottom 4em
+		h2
+			span
+				&:first-child
+					color rojoCorazon
+				&:last-child
+					color verdeSalud
+
+#experts
+	background rojoCorazon
+	color white
+	overflow hidden
+	text-align center
+	h2
+		margin-top 2em
+	#slider
+		margin-bottom 4em
+		.itemExpert
+			display inline-block
+			margin 0 1.5em
+			max-width 230px
+			&:first-child
+				margin-left 0
+			&:last-child
+				margin-right 0
+			.circle
+				border 1px dashed white
+				border-radius 50%
+			h3
+				margin .4em 0 0 0
+			p
+				margin-top 0
+				color rgba(white, .5)
+
+#organizers
+	background verdeSalud
+	color white
+	overflow hidden
+	text-align center
+	h2
+		margin-top 2em
+	ul
+		margin-top 3.5em
+		margin-bottom 4em
+		li
+			display inline-block
+			margin 0 1.5em
+			max-width 230px
+			&:first-child
+				margin-left 0
+			&:last-child
+				margin-right 0
+			.circle
+				border 1px dashed white
+				border-radius 50%
+			h3
+				margin .4em 0 0 0
+			p
+				margin-top 0
+				color rgba(white, .5)
+
+#map
+	height 450px
+
+#tickets
+	text-align center
+	margin-top 4em
+	.eventbrite
+		max-width 740px
+		margin 3em auto

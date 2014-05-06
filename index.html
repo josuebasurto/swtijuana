@@ -3,15 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Startup Weekend Tijuana: Health and Care</title>
-	<meta name="description" content="HUB STN es un espacio coworking binacional que integra a emprendedores, tecnología y cultura de manera sinérgica para desarrollar ideas y economía.">
+	<meta name="description" content="Startup Weekend Tijuana es la oportunidad que muchos emprendedores esperan. Tienes solo 54 horas para hacer realidad tu idea y convencer al jurado que tu empresa es la mejor.">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="css/flickerplate.css" rel="stylesheet" type="text/css" />
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/modernizr.js"></script>
-
+	<script src="js/modernizr.js" type="text/javascript"></script>
+	<script src="js/jquery-sticky.js" type="text/javascript"></script>
+	<script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+	<script src="js/flickerplate.min.js" type="text/javascript"></script> 
 </head>
 <body>
 	<header>
@@ -21,15 +24,290 @@
 			<p>Del 6 al 8 de Junio</p>
 		</figure>
 
-		<!-- <a href="" class="btnTickets">¡Regístrate!</a> -->
+		<a href="#tickets" class="btnTickets">¡Regístrate!</a>
+		<div class="bar"></div>
 	</header>
 
-	<section>
-		
+	<section id="description">
+		<article class="twits">
+			<h1>Startup Weekend es...</h1>
+			<p>La oportunidad de hacer realidad tus ideas locas en un fin de semana.</p>
+			<div class="user">
+				<img src="img/twits/user1.jpg" alt="participantes" class="picTwit"/>
+				<p>@JozuéMorales</br>Participante 2da edición</p>
+			</div>
+		</article>
+
+		<article class="video">
+			<!-- <iframe width="640" height="360" src="//www.youtube.com/embed/cPScUWwP6ec?rel=0" frameborder="0" allowfullscreen></iframe> -->
+		</article>
 	</section>
 	
-	<footer>
+	<section id="details">
+		<section id="skills">
+			<h2>Perfiles de participantes</h2>
+			<ul>
+				<li>
+					<figure class="circle icon-code"></figure>
+					<h3>Desarrolladores</h3>
+					<p>Desarrolladores front end, back end y técniocs en plataformas virtuales.</p>
+				</li>
+				<li>
+					<figure class="circle icon-design"></figure>
+					<h3>Diseñadores</h3>
+					<p>Diseñadores web, gráficos, multimedia, industriales y artistas visuales.</p>
+				</li>
+				<li>
+					<figure class="circle icon-business"></figure>
+					<h3>Negocios</h3>
+					<p>Mercadólogos, economistas, comunicólogos y administradores.</p>
+				</li>
+				<li>
+					<figure class="circle icon-doctor"></figure>
+					<h3>Doctores</h3>
+					<p>Nutriólogos, pediatras, odontólogos, psicólogos y demás ciencias de la salud.</p>
+				</li>
+			</ul>
+		</section>
 		
+		<section id="program">
+			<h2>Programa del evento</h2>
+			<section>
+				<article>
+					<div class="ribbon friday"><h3>Viernes 6 de Julio - 6:00 pm a 10:00 pm</h3></div>
+					<figure class="icon-idea"></figure>
+					<p>Bienvenida a todos los emprendedores.</p>
+
+					<p>La inauguración del evento comienza con una divertida dinámica de networking para la integración de todos los participantes. Después se da la introducción de lo que se vivirá durante los tres días y empiezan los “Pitch Fire” de los emprendedores que tengan ideas y desean juntar un equipo.</p>
+
+					<p>*Pitch Fire: Explicar tu idea en sólo 1 minuto.</p>
+				</article>
+
+				<article>
+					<div class="ribbon saturday"><h3>Sábado 7 de Julio - 9:00 am a 10:00 pm</h3></div>
+					<figure class="icon-glass"></figure>
+					<p>Aprendiendo a validar ideas.</p>
+
+					<p>Después de elevarte las energías con un rico desayuno, se te brindaran materiales y herramientas para validar las ideas con clientes potenciales. Luego vienen los mentores a ayudarte con todos tus avances: tu producto y tu modelo de negocios.</p>
+
+					<p>*Modelo de negocios: Documento clave donde demuestras como capturas y generas valor.</p>
+				</article>
+
+				<article>
+					<div class="ribbon sunday"><h3>Domingo 8 de Julio - 9:00 am a 8:00 pm</h3></div>
+					<figure class="icon-graphic"></figure>
+					<p>Presentaciones finales y premiación.</p>
+
+					<p>Continuando con el trabajo duro y después de haber tomado varias tazas de café, llega el momento de presentar las ideas convertidas en proyectos, donde explican su modelo de negocios a un jurado de expertos en el tema de startups e inversionistas.</p>
+
+					<p>Al final, se eligen los tres primeros lugares y todos a celebrar conviviendo con los mentores y jueces.</p>
+				</article>
+			</section>
+		</section>
+		
+		<section id="ideas">
+			<h2>Ideas <span>Health</span> & <span>Care</span></h2>
+			<ul>
+				<li>
+					<figure class="circle icon-pharmacy"></figure>
+					<h3>Farmacéutico</h3>
+					<p>Ideas que puedan mejorar la presentación o colocación de productos medicos.</p>
+				</li>
+				<li>
+					<figure class="circle icon-heart"></figure>
+					<h3>Actividad Física</h3>
+					<p>Ideas que ayuden a mejorar la condición física y cardiaca mediante ejercicios.</p>
+				</li>
+				<li>
+					<figure class="circle icon-apple"></figure>
+					<h3>Alimentación</h3>
+					<p>Ideas para comunicar y controlar los alimentos que se consumen dia a dia.</p>
+				</li>
+				<li>
+					<figure class="circle icon-stethoscope"></figure>
+					<h3>Servicios/Consulta</h3>
+					<p>Ideas que puedan aumentar la calidad del tratamiento de los pacientes.</p>
+				</li>
+			</ul>
+		</section>
+	</section>
+
+	<section id="experts">
+		<h2>Mentores y Jueces</h2>
+		<div id="slider" class="slideExperts">
+			<ul>
+				<li>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+				</li>
+				<li>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+				</li>
+				<li>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+					<div class="itemExpert">
+						<figure>
+							<img src="img/mentors/marshall.jpg" alt="Miguel Marshall" width="200" height="200" class="circle"/>
+						</figure>
+						<h3>Miguel Marshall</h3>
+						<p>Director regional de Angel Ventures México</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3364.6655162080183!2d-116.989792!3d32.508368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d948014c999cbb%3A0xbb4f8c3b9d3fa6d8!2sBaja&#39;s+Innovation+and+Technology+Center!5e0!3m2!1ses-419!2s!4v1399340041358" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+	</section>
+
+	<section id="organizers">
+		<h2>Organizadores</h2>
+		<ul>
+			<li>
+				<figure>
+					<img src="img/organizers/happy.jpg" alt="Jozué Morales" width="200" height="200" class="circle"/>
+				</figure>
+				<h3>Jozué Morales</h3>
+				<p>Co-Fundador de Zench Consulting</p>
+			</li>
+			<li>
+				<figure>
+					<img src="img/organizers/happy.jpg" alt="Emmanuel Gonzáles" width="200" height="200" class="circle"/>
+				</figure>
+				<h3>Emmanuel Gonzáles</h3>
+				<p>Fundador de Tecnologías Inteligentes</p>
+			</li>
+			<li>
+				<figure>
+					<img src="img/organizers/happy.jpg" alt="Deyanira Santos" width="200" height="200" class="circle"/>
+				</figure>
+				<h3>Deyanira Santos</h3>
+				<p>Gerente de ventas en SAGE Oasis of Hope</p>
+			</li>
+			<li>
+				<figure>
+					<img src="img/organizers/happy.jpg" alt="Julio Resendíz" width="200" height="200" class="circle"/>
+				</figure>
+				<h3>Julio Resendíz</h3>
+				<p>Fundador de Open DATA Tijuana</p>
+			</li>
+		</ul>
+	</section>
+
+	<section id="tickets">
+		<h2>Adquiere tus boletos</h2>
+		<div class="eventbrite">
+			<div style="width:100%; text-align:left;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=11391053949&ref=etckt" frameborder="0" height="682" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Registro de eventos online</a><span style="color:#ddd;"> para </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://swtijuana5.eventbrite.com/?ref=etckt">Startup Weekend Tijuana: Health </a> <span style="color:#ddd;">ofrecido por</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+		</div>
+	</section>
+
+	<footer>
+		<figure id="swtj">
+			<img src="img/logos/swtijuana.png" alt="Startup Weekend Tijuana" width="250" height="145"/>
+			<a href="http://facebook.com/swtijuana" target="_blank" class="circle icon-facebook"></a>
+			<a href="http://twitter.com/StartupTijuana" target="_blank" class="circle icon-twitter"></a>
+			<p>#SWTJ</p>
+		</figure>
+		
+		<figure class="patrocinio">
+			<h2>Patrocinadores</h2>
+			<img src="img/logos/sponsors.png" alt="Patrocinadores"/>
+		</figure>
 	</footer>
+
+	<script type="text/javascript">
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1400);
+                    return false;
+                }
+            }
+        });
+        $(document).ready(function () {
+            $(".bar").sticky({ topSpacing: 0 });
+            $(".slideExperts").flicker();
+        });
+    });
+    </script>
 </body>
 </html>
