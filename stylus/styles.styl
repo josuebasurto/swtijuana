@@ -53,7 +53,7 @@ footer
 			margin-right 1.4em
 			padding .35em
 			text-decoration none
-	.patrocinio
+	#sponsors
 		display inline-block
 		margin-left 4em
 		margin-right 3em
@@ -123,6 +123,9 @@ header
 				padding-top 1em
 		p
 			margin 0
+		.swText
+			height 140px
+
 	.btnTickets
 		background rgba(white, .85)
 		border 2px solid white
@@ -236,6 +239,7 @@ header
 	text-align center
 	h2
 		margin-top 2em
+	#mobile
 	#slider
 		margin-bottom 4em
 		.itemExpert
@@ -254,6 +258,8 @@ header
 			p
 				margin-top 0
 				color rgba(white, .5)
+	#mobile
+		display none
 
 #organizers
 	background verdeSalud
@@ -288,6 +294,136 @@ header
 #tickets
 	text-align center
 	margin-top 4em
+	.btnEventbrite
+		background-image url("../img/bg/boletos.png")
+		background-repeat no-repeat
+		background-size contain
+		display none
+		height 58px
+		margin 3em auto 6em
+		width 190px
 	.eventbrite
 		max-width 740px
 		margin 3em auto
+
+@media screen and (max-width:480px)
+	footer
+		#swtj
+			padding 0
+		#sponsors
+			display none
+	header
+		figure
+			.swText
+				height 95px
+				margin-top 1em
+		.btnTickets
+			display none
+		.bar
+			height 5px
+	#description
+		.twits
+			padding 1em
+			margin-top 3em
+		.video
+			display none
+	#details
+		#skills
+		#ideas
+			ul
+				li
+					margin 1em 0
+		#program
+			margin-top 0
+			section
+				margin 0em 1em
+				article
+					padding 0 1em
+					text-align center
+					.friday
+					.saturday
+					.sunday
+						background-image none
+					.ribbon
+						padding 0
+						width auto
+						h3
+							color cafeOscuro
+					figure
+						float none
+					.p-description
+						display none
+	#experts
+		#slider
+			display none
+		#mobile
+			display block
+			.itemExpert
+				margin 1em 0
+	#organizers
+		ul
+			li
+				margin 1em 0
+	#tickets
+		.btnEventbrite
+			display block
+		.eventbrite
+			display none
+
+@media screen and (max-width:1000px)
+	footer
+		#swtj
+			padding 0
+			margin-bottom 2em
+		#sponsors
+			display none
+	#details
+		#skills
+			ul
+				li
+					margin 1em
+					&:first-child
+						margin-left 1em
+					&:last-child
+						margin-right 1em
+		#program
+			section
+				margin 3em 1.5em 0
+				article
+					padding 1em
+					text-align center
+					.ribbon
+						margin 0 0 0 -47px
+						padding-top .6em
+						text-align left
+						h3
+							margin 0 0 0 1em
+					figure
+						float none
+		#ideas
+			ul
+				li
+					margin 1em
+					&:first-child
+						margin-left 1em
+					&:last-child
+						margin-right 1em
+	#experts
+		#slider
+			display none
+		#mobile
+			display block
+			.itemExpert
+				margin 1em
+				&:first-child
+					margin-left 1em
+				&:last-child
+					margin-right 1em
+	#organizers
+		ul
+			li
+				margin 1em
+				&:first-child
+					margin-left 1em
+				&:last-child
+					margin-right 1em
