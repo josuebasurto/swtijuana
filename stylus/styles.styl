@@ -6,7 +6,9 @@ rojoCorazon = #d12845
 verdeSalud = #00be63
 cafeOscuro = #5a463d
 cafeFooter = #22201f
+cafeClaro = #86796f
 amarilloClaro = #fbf8e0
+azulMedico = #3399cc
 
 body
 	background amarilloClaro
@@ -35,8 +37,7 @@ footer
 		width 100%
 	#swtj
 		display inline-block
-		padding-right 2.5em
-		margin-bottom 3em
+		margin-bottom 1em
 		img
 			display block
 			margin 2em 0 0 0
@@ -53,27 +54,6 @@ footer
 			margin-right 1.4em
 			padding .35em
 			text-decoration none
-	#sponsors
-		display inline-block
-		margin-left 4em
-		margin-right 3em
-		position relative
-		&:before
-				content '{'
-				color rgba(amarilloClaro, .10)
-				font-size 14em
-				left -65px
-				position absolute
-				top 0
-			&:after
-				content '}'
-				color rgba(amarilloClaro, .10)
-				font-size 14em
-				position absolute
-				right -65px
-				top 0
-		h2
-			color amarilloClaro
 
 h1
 	font-family klinic_slabbold
@@ -97,7 +77,7 @@ header
 	text-align center
 	&:before
 		content ''
-		background rgba(verdeSalud, .90)
+		background rgba(verdeSalud, .8)
 		height 600px
 		left 0
 		position absolute
@@ -142,7 +122,6 @@ header
 #description
 	background white
 	border-bottom 1px solid #CCC
-	height 500px
 	text-align center
 	.twits
 		display inline-block
@@ -163,7 +142,7 @@ header
 				margin .6em 0 0 1em
 	.video
 		display inline-block
-		margin-top 4.8em
+		margin 4.8em 0
 
 #details
 	text-align center
@@ -187,6 +166,31 @@ header
 					display inline-block
 					font-size 6em
 					padding .35em
+					transition background .5s
+				.icon-code
+				.icon-heart
+					&:hover
+						background rojoCorazon
+						border 1px dashed white
+						color white
+				.icon-design
+				.icon-apple
+					&:hover
+						background verdeSalud
+						border 1px dashed white
+						color white
+				.icon-business
+				.icon-pharmacy
+					&:hover
+						background cafeClaro
+						border 1px dashed white
+						color white
+				.icon-doctor
+				.icon-stethoscope
+					&:hover
+						background azulMedico
+						border 1px dashed white
+						color white
 
 	#program
 		margin-top 4em
@@ -260,6 +264,8 @@ header
 				color rgba(white, .5)
 	#mobile
 		display none
+#map
+	height 450px
 
 #organizers
 	background verdeSalud
@@ -288,12 +294,22 @@ header
 				margin-top 0
 				color rgba(white, .5)
 
-#map
-	height 450px
+#sponsors
+	background white
+	border-bottom 1px solid #CCC
+	text-align center
+	figure
+		max-width 1000px
+		display inline-block
+		margin 2em 0 3em
+		img
+			width 100%
 
 #tickets
 	text-align center
-	margin-top 4em
+	overflow hidden
+	h2
+		margin-top 2em
 	.btnEventbrite
 		background-image url("../img/bg/boletos.png")
 		background-repeat no-repeat
@@ -323,10 +339,8 @@ header
 			height 5px
 	#description
 		.twits
-			padding 1em
-			margin-top 3em
-		.video
-			display none
+			padding .5em
+			margin 3em 0
 	#details
 		#skills
 		#ideas
@@ -370,13 +384,32 @@ header
 		.eventbrite
 			display none
 
-@media screen and (max-width:1000px)
+@media screen and (max-width:700px)
+	#description
+		.video
+			height 0
+			width 95%
+			overflow hidden
+			padding-bottom 56.25%
+			padding-top 30px
+			position relative
+			iframe
+				height 100%
+				left 0
+				position absolute
+				top 0
+				width 100%
+
+@media screen and (min-width:490px) and (max-width:1145px)
 	footer
 		#swtj
 			padding 0
 			margin-bottom 2em
 		#sponsors
 			display none
+	#description
+		.video
+			margin-top 0
 	#details
 		#skills
 			ul
